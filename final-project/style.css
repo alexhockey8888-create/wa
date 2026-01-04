@@ -1,0 +1,243 @@
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body & Typography */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background: #f4f4f4;
+  color: #333;
+}
+
+/* Header & Navigation */
+header {
+  background: #222;
+  color: #fff;
+  padding: 15px 20px;
+}
+
+header h1 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  flex-wrap: wrap;
+}
+
+.nav li {
+  margin: 0 10px;
+}
+
+.nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px 12px;
+  transition: background 0.3s ease;
+}
+
+.nav a:hover {
+  background: #444;
+  border-radius: 4px;
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 20px;
+}
+
+.hero img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Main Content */
+main {
+  padding: 20px;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 15px;
+  background: #222;
+  color: #fff;
+  margin-top: 20px;
+}
+
+/* Responsive Image */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Lists */
+.simple-list, .nested-list {
+  margin: 15px 0;
+  padding-left: 20px;
+}
+
+.simple-list li, .nested-list li {
+  margin-bottom: 8px;
+}
+
+/* Table Styling */
+.styled-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  font-size: 1rem;
+}
+
+.styled-table th, .styled-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+}
+
+.styled-table th {
+  background: #333;
+  color: #fff;
+}
+
+.styled-table tr:nth-child(even) {
+  background: #f9f9f9;
+}
+
+/* Form Styling */
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: 20px auto;
+}
+
+form label {
+  margin: 10px 0 5px;
+}
+
+form input, form textarea, form button {
+  padding: 10px;
+  font-size: 1rem;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+form button {
+  background: #222;
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+form button:hover {
+  background: #444;
+}
+
+/* Gallery Grid */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+}
+
+.gallery-grid img {
+  border-radius: 8px;
+  cursor: zoom-in;
+}
+
+/* Modal / Lightbox */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0,0,0,0.8);
+  z-index: 1000;
+}
+
+.modal.hidden { display: none; }
+
+.modal .lightbox-img {
+  max-width: 90%;
+  max-height: 80%;
+  border-radius: 6px;
+}
+
+.modal .close,
+.modal .prev,
+.modal .next {
+  position: absolute;
+  background: rgba(255,255,255,0.9);
+  border: none;
+  font-size: 1.2rem;
+  padding: 6px 10px;
+  cursor: pointer;
+}
+
+.modal .close { top: 20px; right: 20px; }
+.modal .prev { left: 20px; }
+.modal .next { right: 20px; }
+
+/* Active nav link */
+.nav a.active {
+  background: #ffcc00;
+  color: #222;
+  border-radius: 4px;
+}
+
+/* Nav toggle */
+.nav-toggle {
+  display: none;
+  background: transparent;
+  border: none;
+  color: #fff;
+  font-size: 1.4rem;
+  cursor: pointer;
+}
+
+nav.open { display: block; }
+
+@media (max-width: 768px) {
+  .nav {
+    flex-direction: column;
+    align-items: center;
+    display: none;
+  }
+
+  .nav.open {
+    display: flex;
+  }
+
+  .nav-toggle { display: inline-block; }
+
+  header h1 {
+    font-size: 1.8rem;
+  }
+}
+
+/* Hero slider */
+.hero-slider { position: relative; padding: 40px 20px; text-align: center; }
+.slide { display: none; opacity: 0; transition: opacity 0.5s ease; }
+.slide.active { display: block; opacity: 1; }
+
+/* Utility hidden class */
+.hidden { display: none; }
+
+/* Form feedback */
+#contact-feedback { text-align: center; margin-top: 10px; color: green; }

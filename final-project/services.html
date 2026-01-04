@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services - My Organization</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="scripts.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Our Services</h1>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="main-nav">☰</button>
+    <nav id="main-nav">
+      <ul class="nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2>What We Offer</h2>
+    <img src="images/Capture-opt.jpg" alt="Services" width="472" height="468" loading="lazy" decoding="async">
+
+    <!-- Complex Table -->
+    <table class="styled-table">
+      <caption>Service Pricing</caption>
+      <thead>
+        <tr>
+          <th>Service</th>
+          <th>Basic</th>
+          <th>Premium</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="expandable">
+          <td class="service-name">Priority Veiwing (New Product)</td>
+          <td>$100</td>
+          <td>$200</td>
+        </tr>
+        <tr class="service-details hidden"><td colspan="3">Priority Veiwing details and sample deliverables.</td></tr>
+        <tr class="expandable">
+          <td class="service-name">Card &amp; Collectible Cleaning</td>
+          <td>$150</td>
+          <td>$300</td>
+        </tr>
+        <tr class="service-details hidden"><td colspan="3">Professional cleaning and preservation for cards and collectibles, including surface cleaning and safe storage recommendations.</td></tr>
+      </tbody>
+    </table>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 My Organization</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery - My Organization</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="scripts.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Gallery</h1>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="main-nav">☰</button>
+    <nav id="main-nav">
+      <ul class="nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Our Work</h2>
+    <div class="gallery-grid">
+      <img src="images/3-opt.jpg" alt="Gallery 1" width="474" height="261" loading="lazy" decoding="async">
+      <img src="images/aaa-opt.jpg" alt="Gallery 2" width="242" height="244" loading="lazy" decoding="async">
+      <img src="images/Capture-opt.jpg" alt="Gallery 3" width="472" height="468" loading="lazy" decoding="async">
+    </div>
+
+    <!-- Video -->
+    <h3>Watch Our Story</h3>
+    <video controls>
+      <source src="video.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </main>
+
+  <!-- Lightbox modal -->
+  <div id="lightbox" class="modal hidden" aria-hidden="true">
+    <button class="close" aria-label="Close">×</button>
+    <button class="prev" aria-label="Previous">‹</button>
+    <img class="lightbox-img" src="" alt="">
+    <button class="next" aria-label="Next">›</button>
+  </div>
+
+  <footer>
+    <p>&copy; 2026 My Organization</p>
+  </footer>
+</body>
+</html>
